@@ -5,19 +5,21 @@ description: "geodash 0.0.1"
 path:
   geodash: "./src/geodash"
 plugins:
-  - { version: master, url: https://github.com/geodashio/geodash-plugin-base.git }
-  - { version: master, url: https://github.com/geodashio/geodash-plugin-handlers.git }
-  - { branch: master, url: https://github.com/geodashio/geodash-plugin-filters.git }
-  #- file:///home/vagrant/geodash-plugin-filters.git
-  - { branch: master, url: https://github.com/geodashio/geodash-plugin-legend.git }
-  #- file:///home/vagrant/geodash-plugin-legend.git
+  #- { version: master, url: https://github.com/geodashio/geodash-plugin-base.git }
+  - file:///home/vagrant/geodash-plugin-base.git
+  #- { version: master, url: https://github.com/geodashio/geodash-plugin-handlers.git }
+  - file:///home/vagrant/geodash-plugin-handlers.git
+  #- { branch: master, url: https://github.com/geodashio/geodash-plugin-filters.git }
+  - file:///home/vagrant/geodash-plugin-filters.git
+  #- { branch: master, url: https://github.com/geodashio/geodash-plugin-legend.git }
+  - file:///home/vagrant/geodash-plugin-legend.git
   - welcome
   - about
   - download
-  - { version: master, url: https://github.com/geodashio/geodash-plugin-overlays.git }
-  #- file:///home/vagrant/geodash-plugin-overlays.git
-  - { version: master, url: https://github.com/geodashio/geodash-plugin-navbars.git }
-  #- file:///home/vagrant/geodash-plugin-navbars.git
+  #- { version: master, url: https://github.com/geodashio/geodash-plugin-overlays.git }
+  - file:///home/vagrant/geodash-plugin-overlays.git
+  #- { version: master, url: https://github.com/geodashio/geodash-plugin-navbars.git }
+  - file:///home/vagrant/geodash-plugin-navbars.git
   - sidebar_toggle_left
   - sidebar_toggle_right
 resources:
@@ -39,6 +41,8 @@ resources:
     path: "./lib/ol3/{{ version }}/ol.css"
   - name: font-awesome.min.css
     path: ./lib/font-awesome/4.5.0/css/font-awesome.min.
+  - name: tether.css
+    path: "./lib/tether/{{ version }}/dist/css/tether.min.css"
   # For development, comment the following.
   - name: geodash.js
     path: "./lib/geodashjs/{{ version }}/geodash.js"
@@ -107,3 +111,9 @@ resources:
   - name: showdown.js
     path: "./lib/showdown/{{ version }}/showdown.js"
     minified: "./lib/showdown/{{ version }}/showdown.min.js"
+  - name: tether.js
+    path: "./lib/tether/{{ version }}/dist/js/tether.js"
+    minified: "./lib/tether/{{ version }}/dist/js/tether.min.js"
+  - name: jsts.js
+    path: "./lib/jsts/{{ version }}/jsts.min.js"
+    minified: "./lib/jsts/{{ version }}/jsts.min.js"
