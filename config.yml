@@ -44,13 +44,13 @@ resources:
   - name: tether.css
     path: "./lib/tether/{{ version }}/dist/css/tether.min.css"
   # For development, comment the following.
-  - name: geodash.js
-    path: "./lib/geodashjs/{{ version }}/geodash.js"
-    minified: "./lib/geodashjs/{{ version }}/geodash.min.js"
-  # For development, uncomment the following
   #- name: geodash.js
-  #  path: "/home/vagrant/geodash.js.git/dist/geodash.js"
-  #  minified: "/home/vagrant/geodash.js.git/dist/geodash.min.js"
+  #  path: "./lib/geodashjs/{{ version }}/geodash.js"
+  #  minified: "./lib/geodashjs/{{ version }}/geodash.min.js"
+  # For development, uncomment the following
+  - name: geodash.js
+    path: "/home/vagrant/geodash.js.git/dist/geodash.js"
+    minified: "/home/vagrant/geodash.js.git/dist/geodash.min.js"
   - name: angular.js
     path: "./lib/angularjs/{{ version }}/angular.js"
     minified: "./lib/angularjs/{{ version }}/angular.min.js"
