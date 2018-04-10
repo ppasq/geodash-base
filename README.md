@@ -1,4 +1,4 @@
-# GeoDash Base
+# GeoDash Base for SpaRC
 
 GeoDash Base is the base front-end framework for [GeoDash](http://geodash.io/) and is used in most implementing projects.  In the code, it is sometimes referred to plainly as "geodash".  Implementing projects use this as a dependency in their [Gulp](http://gulpjs.com/) build pipeline; as such, there is no direct distributable from this repo.
 
